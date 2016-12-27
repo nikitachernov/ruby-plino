@@ -1,5 +1,6 @@
 require "plino/version"
+require "plino/client"
+require "plino/classifier"
 
 module Plino
-  # Your code goes here...
 end

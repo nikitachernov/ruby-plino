@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://plino.herokuapp.com/api/v1/classify/
+    body:
+      encoding: UTF-8
+      string: '{"email_text":"Dear Tasdik,\nI would like to immediately transfer 10000
+        thousand dollars to your account as my beloved husband has expired and I have
+        nobody to ask for to transfer the money to your account.\nI come from the
+        family of the royal prince of burkino fasa and I would be more than obliged
+        to take your help on this matter.\nWould you care to share your bank account
+        details with me in the next email conversation that we have?\n-regards -Liah
+        herman\n"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - plino.herokuapp.com
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - gunicorn/19.4.5
+      Date:
+      - Tue, 27 Dec 2016 16:07:43 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '513'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: "{\n  \"email_class\": \"spam\", \n  \"email_text\": \"Dear Tasdik,\\nI
+        would like to immediately transfer 10000 thousand dollars to your account
+        as my beloved husband has expired and I have nobody to ask for to transfer
+        the money to your account.\\nI come from the family of the royal prince of
+        burkino fasa and I would be more than obliged to take your help on this matter.\\nWould
+        you care to share your bank account details with me in the next email conversation
+        that we have?\\n-regards -Liah herman\\n\", \n  \"status\": 200\n}"
+    http_version: 
+  recorded_at: Tue, 27 Dec 2016 16:07:43 GMT
+recorded_with: VCR 3.0.3
