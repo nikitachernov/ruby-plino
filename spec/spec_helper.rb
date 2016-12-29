@@ -1,5 +1,5 @@
-$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-require "plino"
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'plino'
 
 require 'vcr'
 VCR.configure do |c|

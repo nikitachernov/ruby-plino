@@ -1,7 +1,9 @@
 module Plino
+  ##
+  # This class is used for classification of texts as spam or ham
   class Classifier
-    SPAM = 'spam'
-    HAM = 'ham'
+    SPAM = 'spam'.freeze
+    HAM = 'ham'.freeze
 
     def spam?(text)
       classifies_as?(SPAM, text)

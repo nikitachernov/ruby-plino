@@ -1,9 +1,11 @@
 require 'net/http'
 
 module Plino
+  ##
+  # This class is used for calling Plino API
   class Client
-    BASE_URL = 'https://plino.herokuapp.com'
-    CLASSIFY_PATH = '/api/v1/classify/'
+    BASE_URL = 'https://plino.herokuapp.com'.freeze
+    CLASSIFY_PATH = '/api/v1/classify/'.freeze
 
     def classify(text)
       post(CLASSIFY_PATH, email_text: text)
@@ -16,7 +18,7 @@ module Plino
 
       request = Net::HTTP::Post.new(uri)
       request.body = data.to_json
-      request.set_content_type("application/json")
+      request.set_content_type('application/json')
 
       http = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true)
 
@@ -24,9 +26,8 @@ module Plino
 
       response = JSON.parse(response.body)
 
-      response.inject({}) do |h, (k, v)|
+      response.each_with_object({}) do |(k, v), h|
         h[k.to_sym] = v
-        h
       end
     end
   end
