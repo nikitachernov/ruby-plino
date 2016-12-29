@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["nikita.cernovs@accenture.com"]
 
   spec.summary       = "Plino Ruby client"
-  spec.description   = "Plino Ruby client"
+  spec.description   = "Ruby client for Plino https://plino.herokuapp.com/"
   spec.homepage      = "https://github.com/nikitachernov/ruby-plino"
   spec.license       = "MIT"
 
