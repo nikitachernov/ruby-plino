@@ -13,9 +13,9 @@ module Plino
 
         it 'should classify text as spam' do
           expect(response).to eq(
-            email_class: 'spam',
-            email_text: text,
-            status: 200
+            'email_class' => 'spam',
+            'email_text' => text,
+            'status' => 200
           )
         end
       end
@@ -25,9 +25,9 @@ module Plino
 
         it 'should classify text as ham' do
           expect(response).to eq(
-            email_class: 'ham',
-            email_text: text,
-            status: 200
+            'email_class' => 'ham',
+            'email_text' => text,
+            'status' => 200
           )
         end
       end

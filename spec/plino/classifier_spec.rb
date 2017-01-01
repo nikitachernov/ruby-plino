@@ -7,9 +7,9 @@ module Plino
 
     let(:response) do
       {
-        email_class: email_class,
-        email_text: text,
-        status: 200
+        'email_class' => email_class,
+        'email_text' => text,
+        'status' => 200
       }
     end
 

@@ -24,11 +24,7 @@ module Plino
 
       response = http.request(request)
 
-      response = JSON.parse(response.body)
-
-      response.each_with_object({}) do |(k, v), h|
-        h[k.to_sym] = v
-      end
+      JSON.parse(response.body)
     end
   end
 end

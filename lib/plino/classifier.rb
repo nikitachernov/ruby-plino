@@ -20,7 +20,7 @@ module Plino
     end
 
     def classify(text)
-      client.classify(text)[:email_class]
+      client.classify(text)['email_class']
     end
 
     def client
