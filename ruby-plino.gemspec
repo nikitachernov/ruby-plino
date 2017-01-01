@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'plino/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'plino'
+  spec.name          = 'ruby-plino'
   spec.version       = Plino::VERSION
   spec.authors       = ['Nikita Chernov']
   spec.email         = ['nikita.cernovs@accenture.com']
