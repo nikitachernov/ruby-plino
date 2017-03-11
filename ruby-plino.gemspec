@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'ruby-plino'
   spec.version       = Plino::VERSION
   spec.authors       = ['Nikita Chernov']
-  spec.email         = ['nikita.cernovs@accenture.com']
+  spec.email         = ['nikita.cernovs@gmail.com']
 
   spec.summary       = 'Plino Ruby client'
   spec.description   = 'Ruby client for Plino https://plino.herokuapp.com/'
